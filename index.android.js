@@ -12,6 +12,11 @@ import {
   View
 } from 'react-native';
 
+
+var MOCKED_MOVIES_DATA = [
+  {title: '标题', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
+];
+
 class SampleAppMovies extends Component {
   render() {
     return (
