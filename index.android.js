@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, {
   Component,
 } from 'react';
@@ -21,19 +15,13 @@ var MOCKED_MOVIES_DATA = [
 ];
 
 class SampleAppMovies extends Component {
-  render() {
+ render() {
+    var movie = MOCKED_MOVIES_DATA[0];
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <Text>{movie.title}</Text>
+        <Text>{movie.year}</Text>
+        <Image source={{uri: movie.posters.thumbnail}} />
       </View>
     );
   }
