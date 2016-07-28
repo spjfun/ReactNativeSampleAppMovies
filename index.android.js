@@ -4,12 +4,15 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
+import React, {
+  Component,
+} from 'react';
+import { 
   AppRegistry,
+  Image,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 
 
